@@ -38,3 +38,36 @@ class Parrot {
         12.0
     }
 }
+
+class European: Parrot {
+    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+        type = .european
+        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
+    }
+
+    override func speed() -> Double {
+        baseSpeed
+    }
+}
+
+class African: Parrot {
+    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+        type = .african
+        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
+    }
+
+    override func speed() -> Double {
+        max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
+    }
+}
+
+class NorwegianBlue: Parrot {
+    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+        type = .norwegianBlue
+        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
+    }
+
+    override func speed() -> Double {
+        isNailed ? 0 : baseSpeed(voltage: voltage)
+    }
+}
