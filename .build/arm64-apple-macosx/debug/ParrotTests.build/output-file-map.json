@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/master.swiftdeps"
+  },
+  "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/Parrot/Parrot.swift": {
+    "dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/Parrot.d",
+    "object": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/Parrot.swift.o",
+    "swiftmodule": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/Parrot~partial.swiftmodule",
+    "swift-dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/Parrot.swiftdeps"
+  },
+  "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/Parrot/ParrotType.swift": {
+    "dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotType.d",
+    "object": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotType.swift.o",
+    "swiftmodule": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotType~partial.swiftmodule",
+    "swift-dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotType.swiftdeps"
+  },
+  "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/ParrotTests/ParrotTests.swift": {
+    "dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotTests.d",
+    "object": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotTests.swift.o",
+    "swiftmodule": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ahmedibrahim/Downloads/newFolder/Parrot-Refactoring-Kata/.build/arm64-apple-macosx/debug/ParrotTests.build/ParrotTests.swiftdeps"
+  }
+}
