@@ -6,7 +6,7 @@ class Parrot {
     private let voltage: Double
     private let isNailed: Bool
 
-    init(_ type: ParrotType, numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+    init(_ type: ParrotType, _ numberOfCoconuts: Int, _ voltage: Double, _ isNailed: Bool) {
         self.type = type
         self.numberOfCoconuts = numberOfCoconuts
         self.voltage = voltage
@@ -37,37 +37,64 @@ class Parrot {
     private var baseSpeed: Double {
         12.0
     }
+
+    func getCry() -> String {
+        var value: String
+        switch type {
+        case .european:
+            value = "Sqoork!"
+        case .african:
+            value = "Sqaark!"
+        case .norwegianBlue:
+            value = voltage > 0 ? "Bzzzzzz" : "..."
+        default:
+            break
+        }
+        return value
+    }
+
+    static func makeParrot(_ type: ParrotType, _ numberOfCoconuts: Int, _ voltage: Double, _ isNailed: Bool) -> Parrot {
+        switch type {
+        case .european:
+            return European(type, numberOfCoconuts, voltage, isNailed)
+
+        case .african:
+            return African(type, numberOfCoconuts, voltage, isNailed)
+
+        case .norwegianBlue:
+            return NorwegianBlue(type, numberOfCoconuts, voltage, isNailed)
+        }
+    }
 }
 
 class European: Parrot {
-    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
-        type = .european
-        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
-    }
+    // init( Int,  Double,  Bool) {
+    //     self.init( numberOfCoconuts,  voltage,  isNailed)
+    // }
 
-    override func speed() -> Double {
-        baseSpeed
-    }
+    // override func speed() -> Double {
+    //     baseSpeed
+    // }
 }
 
 class African: Parrot {
-    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
-        type = .african
-        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
-    }
+    // init( Int,  Double,  Bool) {
+    //     type = .african
+    //     self.init( numberOfCoconuts,  voltage,  isNailed)
+    // }
 
-    override func speed() -> Double {
-        max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
-    }
+    // override func speed() -> Double {
+    //     max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
+    // }
 }
 
 class NorwegianBlue: Parrot {
-    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
-        type = .norwegianBlue
-        self.init(numberOfCoconuts: numberOfCoconuts, voltage: voltage, isNailed: isNailed)
-    }
+    // init( Int,  Double,  Bool) {
+    //     type = .norwegianBlue
+    //     self.init( numberOfCoconuts,  voltage,  isNailed)
+    // }
 
-    override func speed() -> Double {
-        isNailed ? 0 : baseSpeed(voltage: voltage)
-    }
+    // override func speed() -> Double {
+    //     isNailed ? 0 : baseSpeed( voltage)
+    // }
 }
